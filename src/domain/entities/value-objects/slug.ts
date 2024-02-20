@@ -6,12 +6,12 @@ export class Slug {
   }
 
   /**
-  *Receives a string and normalize it as a slug
-  *
-  * Example: "An example title" => "an-example-title"
-  * 
-  * @param text {string}
-  */
+   *Receives a string and normalize it as a slug
+   *
+   * Example: "An example title" => "an-example-title"
+   *
+   * @param text {string}
+   */
   static createFromText(text: string): Slug {
     const slugText = text
       .normalize('NFKD')
